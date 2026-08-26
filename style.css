@@ -1,0 +1,223 @@
+/* geschaeftsadressen-vergleich.de, gemeinsames Stylesheet.
+   Bewusst ohne Webfonts und ohne JavaScript: schnelle Ladezeit,
+   keine Drittanbieter-Requests, kein Consent-Bedarf. */
+
+:root {
+  --paper: #f7f8f6;
+  --ink: #1a2420;
+  --muted: #5b6b64;
+  --line: #dce3de;
+  --card: #ffffff;
+  --accent: #0b6b57;
+  --accent-dark: #084c3e;
+  --accent-soft: #e6f2ee;
+  --own-soft: #fbf3e0;
+  --own-border: #e3cfa0;
+  --own-ink: #7a5200;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.wrap { max-width: 62rem; margin: 0 auto; padding: 0 1.25rem; }
+
+a { color: var(--accent); }
+a:hover { color: var(--accent-dark); }
+a:focus-visible, button:focus-visible, summary:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+header.site {
+  border-bottom: 1px solid var(--line);
+  background: var(--card);
+}
+header.site .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+}
+.brand {
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 1.02rem;
+}
+.brand .tld { color: var(--accent); }
+.disclosure-chip {
+  font-size: 0.72rem;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.25rem 0.7rem;
+  white-space: nowrap;
+}
+
+main { padding: 2.75rem 0 4rem; }
+
+h1 {
+  font-size: clamp(1.7rem, 4.5vw, 2.4rem);
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  margin: 0 0 0.75rem;
+  text-wrap: balance;
+}
+h2 {
+  font-size: 1.35rem;
+  letter-spacing: -0.01em;
+  margin: 3rem 0 0.75rem;
+  text-wrap: balance;
+}
+h3 { font-size: 1.05rem; margin: 1.5rem 0 0.4rem; }
+p { margin: 0.7rem 0; }
+.lede { color: var(--muted); font-size: 1.05rem; max-width: 46rem; }
+
+.stand {
+  display: inline-block;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  font-size: 0.78rem;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.3rem 0.85rem;
+  margin: 0.75rem 0 0;
+}
+
+.transparenz {
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  background: var(--card);
+  border-radius: 0.6rem;
+  padding: 0.9rem 1.15rem;
+  margin: 1.75rem 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.transparenz strong { color: var(--ink); }
+
+.empfehlung {
+  background: var(--own-soft);
+  border: 1px solid var(--own-border);
+  border-radius: 0.85rem;
+  padding: 1.4rem 1.5rem;
+  margin: 2rem 0;
+}
+.empfehlung .kennzeichnung {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--own-ink);
+}
+.empfehlung h2 { margin: 0.4rem 0 0.5rem; font-size: 1.3rem; }
+.empfehlung ul { margin: 0.6rem 0 1rem; padding-left: 1.2rem; }
+.empfehlung li { margin: 0.3rem 0; }
+.cta {
+  display: inline-block;
+  background: var(--accent);
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 0.6rem;
+  padding: 0.75rem 1.4rem;
+}
+.cta:hover { background: var(--accent-dark); color: #ffffff; }
+
+.tablewrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  background: var(--card);
+  margin: 1.25rem 0 0.5rem;
+}
+table { border-collapse: collapse; width: 100%; font-size: 0.88rem; min-width: 52rem; }
+caption {
+  text-align: left;
+  font-size: 0.8rem;
+  color: var(--muted);
+  padding: 0.7rem 1rem;
+  caption-side: bottom;
+  border-top: 1px solid var(--line);
+}
+th, td { text-align: left; padding: 0.7rem 1rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+th {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--muted);
+  background: var(--paper);
+}
+tbody tr:last-child td { border-bottom: none; }
+td.preis { font-variant-numeric: tabular-nums; white-space: nowrap; font-weight: 650; }
+tr.own td { background: var(--own-soft); }
+.own-tag {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--own-ink);
+  border: 1px solid var(--own-border);
+  border-radius: 999px;
+  padding: 0.1rem 0.5rem;
+  margin-left: 0.4rem;
+  vertical-align: 1px;
+}
+.hinweis { font-size: 0.8rem; color: var(--muted); }
+
+.cards { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); margin: 1.25rem 0; }
+.karte {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  padding: 1.1rem 1.25rem;
+}
+.karte h3 { margin: 0 0 0.35rem; }
+.karte p { margin: 0.35rem 0; font-size: 0.9rem; color: var(--muted); }
+.karte .preis { color: var(--ink); font-weight: 650; }
+
+details {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 0.6rem;
+  margin: 0.6rem 0;
+  padding: 0 1.1rem;
+}
+summary {
+  cursor: pointer;
+  font-weight: 650;
+  padding: 0.85rem 0;
+  list-style-position: inside;
+}
+details p { color: var(--muted); margin-top: 0; }
+
+ol.kriterien { padding-left: 1.25rem; }
+ol.kriterien li { margin: 0.55rem 0; }
+ol.kriterien strong { color: var(--ink); }
+
+footer.site {
+  border-top: 1px solid var(--line);
+  background: var(--card);
+  margin-top: 3rem;
+  font-size: 0.83rem;
+  color: var(--muted);
+}
+footer.site .wrap { padding-top: 1.5rem; padding-bottom: 2rem; }
+footer.site nav { margin-top: 0.5rem; display: flex; flex-wrap: wrap; gap: 1.25rem; }
+
+.legal h2 { font-size: 1.15rem; margin-top: 2rem; }
+.legal p { color: var(--muted); }
+.legal strong { color: var(--ink); }
