@@ -276,10 +276,13 @@ tbody tr:hover{background:var(--surface-2)}
 tbody tr:last-child td,tbody tr:last-child th{border-bottom:0}
 .anbieter{font-weight:650;color:var(--ink);white-space:nowrap;font-size:.98rem;letter-spacing:-.022em}
 .anbieter .dom{display:block;font-size:.74rem;font-weight:400;color:var(--muted-2);margin-top:.15rem;letter-spacing:0}
-/* Kennzeichnung des wirtschaftlich verbundenen Anbieters */
-.anbieter .own{display:inline-block;margin-top:.45rem;font-size:.63rem;font-weight:600;
-  letter-spacing:.06em;text-transform:uppercase;color:#8a5a00;background:rgba(196,132,0,.11);
-  border:1px solid rgba(196,132,0,.26);border-radius:5px;padding:.16rem .42rem;white-space:normal}
+/* Empfehlung und Kennzeichnung der wirtschaftlichen Verbindung stehen bewusst
+   direkt untereinander: Wer die Empfehlung liest, sieht sofort die Verbindung. */
+.anbieter .rec,.anbieter .own{display:block;width:fit-content;font-size:.63rem;font-weight:600;
+  letter-spacing:.06em;text-transform:uppercase;border-radius:5px;padding:.16rem .42rem;white-space:normal}
+.anbieter .rec{margin-top:.5rem;color:#fff;background:var(--accent);border:1px solid var(--accent)}
+.anbieter .own{margin-top:.3rem;color:#8a5a00;background:rgba(196,132,0,.11);
+  border:1px solid rgba(196,132,0,.26)}
 tr.marked{background:rgba(10,63,209,.028)}
 tr.marked:hover{background:rgba(10,63,209,.05)}
 td.preis{white-space:nowrap;min-width:9.5rem}
@@ -314,6 +317,23 @@ td.preis .unit{display:block;font-size:.72rem;color:var(--muted-2);margin-top:.1
   .bar{max-width:100%}
 }
 .note{font-size:.85rem;color:var(--muted);margin-top:.95rem;max-width:52rem}
+
+/* ---------- Empfehlungskasten ----------
+   Zeigt bewusst beide Seiten: Argumente dafuer und dagegen. Eine
+   Empfehlung, die den Wettbewerb ehrlich benennt, ist glaubwuerdiger
+   und rechtlich deutlich robuster als eine blosse Behauptung. */
+.rec-box{margin-top:1.9rem;background:var(--surface);border:1px solid var(--line);
+  border-top:3px solid var(--accent);border-radius:var(--r-xl);padding:1.7rem 1.85rem;
+  box-shadow:0 1px 2px rgba(12,14,20,.04),0 16px 40px -30px rgba(12,14,20,.4)}
+.rec-box .kicker{margin-bottom:.6rem}
+.rec-box h3{font-size:1.2rem;letter-spacing:-.03em}
+.rec-cols{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;margin-top:1.2rem}
+@media (max-width:760px){.rec-cols{grid-template-columns:1fr;gap:1.1rem}}
+.rec-h{font-size:.7rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--muted);margin:0 0 .35rem}
+.rec-cols p:not(.rec-h){font-size:.92rem;color:var(--ink-3);margin:0}
+.rec-foot{margin:1.35rem 0 0;padding-top:1rem;border-top:1px solid var(--line);
+  font-size:.79rem;color:var(--muted-2)}
 
 /* ---------- Inhaltskarten: flach, Haarlinie, kein Glas ---------- */
 /* Feste Spaltenzahl statt auto-fit: so bleibt keine Rasterzelle leer,
