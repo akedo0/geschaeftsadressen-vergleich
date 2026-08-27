@@ -2,7 +2,7 @@
    geschaeftsadressen-vergleich.de
    Redaktioneller Marktueberblick. Ruhige, praezise Flaeche,
    Glas ausschliesslich fuer Bedienelemente (Kopfzeile, Buttons,
-   Formular) — so bleibt es Material statt Dekoration.
+   Formular). So bleibt es Material statt Dekoration.
    Schrift: System-UI (SF Pro / Segoe UI Variable), Inter als
    plattformuebergreifender Rueckfall. Kein CDN, kein Tracking.
    ============================================================ */
@@ -102,7 +102,7 @@ p{margin:.65rem 0}
 .kicker.center{justify-content:center}
 
 /* ============================================================
-   LIQUID GLASS — nur fuer Chrome und Bedienelemente
+   LIQUID GLASS, nur fuer Chrome und Bedienelemente
    Aufbau: Fuellung, Randlinse (staerkerer Blur nur am Rand),
    Spekular-Kante, chromatischer Saum, Tiefe.
    ============================================================ */
@@ -132,7 +132,7 @@ p{margin:.65rem 0}
   transition:box-shadow .6s var(--ease),background .6s var(--ease),padding .5s var(--ease);
 }
 /* Randlinse: nur der aeussere Ring bekommt zusaetzlichen Blur.
-   Genau das macht echtes Glas — die Mitte zeigt klar, der Rand verzerrt. */
+   Genau das macht echtes Glas: die Mitte zeigt klar, der Rand verzerrt. */
 .pill-lens{
   position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:0;
   padding:9px;
@@ -237,6 +237,15 @@ html.js [data-reveal].is-visible{opacity:1;transform:none}
 .facts .val{font-size:1.45rem;font-weight:700;letter-spacing:-.04em;line-height:1;flex:none}
 .facts .lab{font-size:.83rem;color:var(--muted);text-align:right;letter-spacing:-.004em}
 
+/* ---------- Kurzantwort: der Block, den Suchmaschinen und
+   KI-Systeme am liebsten als Antwort herausziehen ---------- */
+.summary{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-xl);
+  padding:1.6rem 1.8rem;max-width:56rem;
+  box-shadow:0 1px 2px rgba(12,14,20,.04),0 14px 36px -28px rgba(12,14,20,.35)}
+.summary .kicker{margin-bottom:.7rem}
+.summary p{margin:0;font-size:1.03rem;color:var(--ink-3);letter-spacing:-.012em}
+.summary strong{color:var(--ink);font-weight:650}
+
 /* ---------- Sektionskopf ---------- */
 .section-head{max-width:46rem;margin-bottom:1.9rem}
 .section-head.center{margin-inline:auto;text-align:center}
@@ -258,22 +267,29 @@ thead th{text-align:left;font-size:.68rem;font-weight:600;text-transform:upperca
   border-bottom:1px solid var(--line-2);white-space:nowrap;background:var(--surface-2)}
 thead th:first-child{padding-left:1.75rem}
 thead th:last-child{padding-right:1.75rem}
-tbody td{padding:1.15rem 1.15rem;border-bottom:1px solid var(--line);vertical-align:top;
-  color:var(--ink-3);border-right:1px solid var(--line)}
-tbody td:first-child{padding-left:1.75rem}
+tbody td,tbody th{padding:1.15rem 1.15rem;border-bottom:1px solid var(--line);vertical-align:top;
+  color:var(--ink-3);border-right:1px solid var(--line);text-align:left}
+tbody td:first-child,tbody th:first-child{padding-left:1.75rem}
 tbody td:last-child{padding-right:1.75rem;border-right:0}
 tbody tr{transition:background .3s var(--ease)}
 tbody tr:hover{background:var(--surface-2)}
-tbody tr:last-child td{border-bottom:0}
-td.anbieter{font-weight:650;color:var(--ink);white-space:nowrap;font-size:.98rem;letter-spacing:-.022em}
-td.anbieter .dom{display:block;font-size:.74rem;font-weight:400;color:var(--muted-2);margin-top:.15rem;letter-spacing:0}
+tbody tr:last-child td,tbody tr:last-child th{border-bottom:0}
+.anbieter{font-weight:650;color:var(--ink);white-space:nowrap;font-size:.98rem;letter-spacing:-.022em}
+.anbieter .dom{display:block;font-size:.74rem;font-weight:400;color:var(--muted-2);margin-top:.15rem;letter-spacing:0}
+/* Kennzeichnung des wirtschaftlich verbundenen Anbieters */
+.anbieter .own{display:inline-block;margin-top:.45rem;font-size:.63rem;font-weight:600;
+  letter-spacing:.06em;text-transform:uppercase;color:#8a5a00;background:rgba(196,132,0,.11);
+  border:1px solid rgba(196,132,0,.26);border-radius:5px;padding:.16rem .42rem;white-space:normal}
+tr.marked{background:rgba(10,63,209,.028)}
+tr.marked:hover{background:rgba(10,63,209,.05)}
 td.preis{white-space:nowrap;min-width:9.5rem}
 td.preis .val{display:block;font-size:1.3rem;font-weight:700;letter-spacing:-.045em;color:var(--ink)}
 td.preis .unit{display:block;font-size:.72rem;color:var(--muted-2);margin-top:.1rem}
 /* Preisbalken: zeigt die Lage im Feld auf einen Blick */
 .bar{display:block;margin-top:.55rem;height:3px;border-radius:2px;background:var(--line-2);
   overflow:hidden;max-width:6.5rem}
-.bar i{display:block;height:100%;border-radius:2px;background:var(--accent);opacity:.85}
+/* min-width, damit auch der guenstigste Anbieter noch einen sichtbaren Balken hat */
+.bar i{display:block;height:100%;min-width:4px;border-radius:2px;background:var(--accent);opacity:.85}
 .ka{color:var(--muted-2);font-style:italic}
 .chip{display:inline-block;font-size:.72rem;font-weight:600;border-radius:5px;
   padding:.2rem .5rem;background:rgba(11,122,82,.09);color:var(--good);
@@ -284,12 +300,12 @@ td.preis .unit{display:block;font-size:.72rem;color:var(--muted-2);margin-top:.1
   table{display:flex;flex-direction:column;min-width:0}
   tbody{display:block;order:1}
   caption{display:block;order:2;padding:.95rem 1.35rem 1.15rem}
-  tr,td{display:block}
+  tr,td,th{display:block}
   thead{display:none}
   tbody tr{padding:1.25rem 1.35rem;border-bottom:1px solid var(--line)}
-  tbody td{border:none;padding:.3rem 0}
-  tbody td:first-child,tbody td:last-child{padding-left:0;padding-right:0}
-  td.anbieter{font-size:1.12rem;padding-bottom:.55rem}
+  tbody td,tbody th{border:none;padding:.3rem 0}
+  tbody td:first-child,tbody td:last-child,tbody th:first-child{padding-left:0;padding-right:0}
+  .anbieter{font-size:1.12rem;padding-bottom:.55rem;white-space:normal}
   tbody td[data-label]:not(.anbieter)::before{
     content:attr(data-label);display:block;font-size:.64rem;font-weight:600;
     text-transform:uppercase;letter-spacing:.1em;color:var(--muted-2);margin-bottom:.08rem}
@@ -334,6 +350,15 @@ details[open] .faq-body{grid-template-rows:1fr}
 .method{border-left:2px solid var(--accent);padding:.15rem 0 .15rem 1.35rem;
   font-size:.87rem;color:var(--muted);max-width:50rem}
 .method strong{color:var(--ink-2);font-weight:600}
+
+/* ---------- Pflichthinweis nach dem UWG ----------
+   Muss als eigenstaendiger Hinweis lesbar sein, nicht im Fliesstext untergehen. */
+.disclosure{display:flex;gap:.8rem;align-items:flex-start;border-radius:var(--r-lg);
+  padding:1rem 1.25rem;margin-bottom:1.4rem;font-size:.875rem;color:var(--ink-3);
+  letter-spacing:-.005em;background:var(--accent-soft);border:1px solid rgba(10,63,209,.16);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.7)}
+.disclosure svg{flex:none;margin-top:.16rem;color:var(--accent)}
+.disclosure strong{color:var(--ink);font-weight:650}
 
 /* ============================================================
    PARTNER-BEREICH

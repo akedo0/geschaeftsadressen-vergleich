@@ -1,4 +1,60 @@
+# geschaeftsadressen-vergleich.de
+# Suchmaschinen und KI-Systeme sind ausdruecklich willkommen: Wir wollen
+# zitiert werden, nicht abgeschirmt. Deshalb kein Disallow fuer die
+# Antwortmaschinen, sondern eine explizite Freigabe.
+
 User-agent: *
+Allow: /
+Disallow: /partner.php
+
+# Google
+User-agent: Googlebot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+# Microsoft Bing, speist auch Copilot
+User-agent: Bingbot
+Allow: /
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+# Weitere
+User-agent: Amazonbot
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: DuckAssistBot
+Allow: /
+User-agent: MistralAI-User
+Allow: /
+User-agent: cohere-ai
 Allow: /
 
 Sitemap: https://geschaeftsadressen-vergleich.de/sitemap.xml

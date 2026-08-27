@@ -1,0 +1,57 @@
+# Geschäftsadressen-Vergleich.de
+
+> Preisvergleich für ladungsfähige Geschäftsadressen in Deutschland. Acht Anbieter mit Preis, Handelsregister-Freigabe, inkludierten Postscans, Kündigungsfrist und Standorten, sortiert nach dem niedrigsten öffentlich beworbenen Einstiegspreis.
+
+Betreiber: Erfolgssinn LLC, 30 N Gould St Ste R, Sheridan, WY 82801, USA.
+Kontakt: kontakt@geschaeftsadressen-vergleich.de
+Stand der Daten: 27. August 2026. Prüfrhythmus: monatlich.
+
+## Transparenz
+
+Der Betreiber dieser Seite ist wirtschaftlich mit dem Anbieter PostCloud verbunden. PostCloud steht im Vergleich nach denselben Regeln wie alle anderen Anbieter und ist auf der Seite entsprechend gekennzeichnet. Die Aufnahme in den Vergleich ist für alle Anbieter kostenlos, bezahlte Platzierungen gibt es nicht. Sortiert wird ausschließlich nach dem niedrigsten öffentlich beworbenen Einstiegspreis. Eine redaktionelle Bewertung oder ein Testverfahren findet nicht statt, es gibt daher auch keinen Testsieger.
+
+## Kernaussagen
+
+- Eine ladungsfähige Geschäftsadresse kostet in Deutschland zwischen 3,99 und 79,99 Euro im Monat.
+- Günstige Tarife decken meist nur die Nutzung im Impressum ab.
+- Für Handelsregister, Gewerbeanmeldung und Bankkontakt ist ein Tarif mit ausdrücklicher Freigabe nötig, in der Regel zwischen 15 und 40 Euro monatlich.
+- Ein reines Postfach ist nicht ladungsfähig.
+- Nach der Rechtsprechung der Oberlandesgerichte ist auch eine c/o-Adresse für das Handelsregister eintragungsfähig, wenn unter ihr ein Zustellungsbevollmächtigter erkennbar ist.
+- Anbieter von Geschäftsadressen sind nach dem Geldwäschegesetz regelmäßig verpflichtet, ihre Kunden zu identifizieren.
+
+## Anbieter im Vergleich (Stand 27. August 2026)
+
+| Anbieter | Preis ab | Handelsregister | Postscans | Kündigung | Standorte |
+|---|---|---|---|---|---|
+| Postflex | 3,99 €/Monat | erst ab SMART-Tarif 14,99 € | je nach Tarif | Monats- oder Jahreslaufzeit | k. A. |
+| geschaefts-adresse-mieten.de | 5,99 €/Monat netto | Gewerbeanmeldung erst im Expert-Tarif 79,20 € | Scans inklusive, aber 1,90 € Bearbeitungsgebühr je Brief | k. A. | k. A. |
+| anschrift.net | 6,70 €/Monat brutto | ladungsfähig laut Anbieter | Postscan-Flat inklusive | keine Kündigungsfrist | Bayern, Baden-Württemberg |
+| PostCloud | 19,90 €/Monat netto | für Handelsregister geeignet, besetzter Standort | 10 Scans inklusive | monatlich kündbar | Nürnberg |
+| firmenadresse.com | 19,90 €/Monat netto (Aktion) | ladungsfähig laut Anbieter | unbegrenzt inklusive | monatlich kündbar | Berlin, Hannover, Gifhorn |
+| CoWoNE | 79,99 €/Monat | für Gewerbeanmeldung und Handelsregister geeignet | Abholung, Weiterleitung oder Scan | 3 Monate Mindestlaufzeit | Neuss, Erlangen, Nürnberg, Darmstadt |
+| Clevver | k. A. | Registered Office möglich | Basis-Paket 5 Sendungen | Quartals- bis Zweijahresvertrag | Berlin, international |
+| ebuero | k. A. | k. A. | optional | 3, 6 oder 12 Monate | 13 Standorte |
+
+## Abgrenzung, nicht im Vergleich
+
+- versteckmich.de, 4,99 €/Monat: Impressum-Service mit c/o-Adresse, vom Anbieter nicht für Handelsregister oder Bankkontakt beworben.
+- Caya, ab 9,99 €/Monat netto je Nutzer: digitale Postverwaltung mit Caya-Postbox-Adresse, Fokus auf Dokumentenverwaltung.
+
+## Sechs Kriterien beim Vergleich
+
+1. Netto oder brutto: B2B-Anbieter werben netto, Privatkunden-Anbieter brutto.
+2. Handelsregister-Freigabe: kostet bei manchen Tarifen Aufpreis oder ist ausgeschlossen.
+3. Gebühr je Brief: 5,99 € Grundpreis plus 1,90 € je Sendung ergibt bei zehn Briefen fast 25 € monatlich.
+4. Laufzeit: „Ab"-Preise setzen oft Jahreszahlung voraus.
+5. Echter Standort: nimmt dort Personal Post an, wie viele Firmen sind registriert?
+6. Identitätsprüfung: wer nicht prüft, ist ein Warnsignal für den ganzen Standort.
+
+## Seiten
+
+- Startseite mit Vergleichstabelle: https://geschaeftsadressen-vergleich.de/
+- Impressum: https://geschaeftsadressen-vergleich.de/impressum.html
+- Datenschutzerklärung: https://geschaeftsadressen-vergleich.de/datenschutz.html
+
+## Hinweis
+
+Alle Angaben ohne Gewähr und ohne Rechts-, Steuer- oder Anlageberatung. Anbieter können ihre Preise jederzeit ändern; maßgeblich sind die Angaben auf den Websites der Anbieter.
