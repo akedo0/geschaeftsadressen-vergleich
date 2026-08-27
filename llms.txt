@@ -16,17 +16,18 @@ Der Betreiber dieser Seite ist wirtschaftlich mit dem Anbieter PostCloud verbund
 - Günstige Tarife decken meist nur die Nutzung im Impressum ab.
 - Für Handelsregister, Gewerbeanmeldung und Bankkontakt ist ein Tarif mit ausdrücklicher Freigabe nötig, in der Regel zwischen 15 und 40 Euro monatlich.
 - Ein reines Postfach ist nicht ladungsfähig.
+- Frei nutzbarer Cloud-Speicher über das Scan-Archiv hinaus wird im Vergleich nur von PostCloud ausgewiesen (10 GB im Einstiegstarif).
 - Nach der Rechtsprechung der Oberlandesgerichte ist auch eine c/o-Adresse für das Handelsregister eintragungsfähig, wenn unter ihr ein Zustellungsbevollmächtigter erkennbar ist.
 - Anbieter von Geschäftsadressen sind nach dem Geldwäschegesetz regelmäßig verpflichtet, ihre Kunden zu identifizieren.
 
 ## Anbieter im Vergleich (Stand 27. August 2026)
 
-| Anbieter | Preis ab | Handelsregister | Postscans | Kündigung | Standorte |
+| Anbieter | Preis ab | Handelsregister | Scans, Weiterleitung, Speicher | Kündigung | Standorte |
 |---|---|---|---|---|---|
 | Postflex | 3,99 €/Monat | erst ab SMART-Tarif 14,99 € | je nach Tarif | Monats- oder Jahreslaufzeit | k. A. |
 | geschaefts-adresse-mieten.de | 5,99 €/Monat netto | Gewerbeanmeldung erst im Expert-Tarif 79,20 € | Scans inklusive, aber 1,90 € Bearbeitungsgebühr je Brief | k. A. | k. A. |
-| anschrift.net | 6,70 €/Monat brutto | ladungsfähig laut Anbieter | Postscan-Flat inklusive | keine Kündigungsfrist | Bayern, Baden-Württemberg |
-| PostCloud | 19,90 €/Monat netto | für Handelsregister geeignet, besetzter Standort | 10 Scans inklusive | monatlich kündbar | Nürnberg |
+| anschrift.net | 6,70 €/Monat brutto | als Impressum-Service beworben, Eignung für Handelsregister nicht angegeben | Postscan-Flat inklusive, Weiterleitung auf Kundenkosten | keine Kündigungsfrist | Bayern, Baden-Württemberg |
+| PostCloud | 19,90 €/Monat netto | für Handelsregister geeignet, besetzter Standort | 10 Scans inklusive, Scan-Frist 48 h, monatliche Sammel-Weiterleitung inklusive, 10 GB Cloud-Speicher | monatlich kündbar | Nürnberg |
 | firmenadresse.com | 19,90 €/Monat netto (Aktion) | ladungsfähig laut Anbieter | unbegrenzt inklusive | monatlich kündbar | Berlin, Hannover, Gifhorn |
 | CoWoNE | 79,99 €/Monat | für Gewerbeanmeldung und Handelsregister geeignet | Abholung, Weiterleitung oder Scan | 3 Monate Mindestlaufzeit | Neuss, Erlangen, Nürnberg, Darmstadt |
 | Clevver | k. A. | Registered Office möglich | Basis-Paket 5 Sendungen | Quartals- bis Zweijahresvertrag | Berlin, international |
